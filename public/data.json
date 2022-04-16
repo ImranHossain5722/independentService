@@ -1,0 +1,38 @@
+[
+
+    {
+   
+       "id":1,
+       "title":"Private Training",
+       "price":"99.9",
+       "description": "Get a great group experince while still recieving individualized coaching.60 Minute SessionsPrivat Gym or In-Home Get 1-on-1 training",
+       "img":"https://res.cloudinary.com/dk0lorahh/image/upload/v1650130692/home-training-1_agh5dp.jpg"
+   
+   
+    },
+   
+    {
+   
+       "id":2,
+       "title":"Group Training",
+       "price":"49.9",
+       "description": "Get a great group experince while still recieving individualized coaching.80 Minute group training",
+       "img": "https://res.cloudinary.com/dk0lorahh/image/upload/v1650130692/home-training-2_fjrlh9.jpg"
+       
+       
+       },
+       {
+   
+           "id":3,
+           "title":"Athlete Training",
+            "price":"149.9",
+            "description": "Get a great group experince while still recieving individualized coaching.1 hours Extra care excises ",
+           "img": "https://res.cloudinary.com/dk0lorahh/image/upload/v1650130692/home-training-3_itrdxf.jpg"
+           
+           
+           }
+       
+       
+       
+       
+   ]
