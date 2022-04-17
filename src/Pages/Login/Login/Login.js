@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import { Form, Button } from "react-bootstrap";
-import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import { useSignInWithEmailAndPassword, useSignInWithGoogle } from 'react-firebase-hooks/auth';
 import {Link , useNavigate} from 'react-router-dom'
 import auth from '../../../firebase.init';
 const Login = () => {
@@ -10,6 +10,10 @@ const [userInformation, setUserInformation] = useState({
     password:"",
 });
 
+// sign with google
+const [signInWithGoogle, googleUser, googleLoading, googleError] = useSignInWithGoogle(auth);
+
+// sign with email and password
 const [
     signInWithEmailAndPassword,
     user,
