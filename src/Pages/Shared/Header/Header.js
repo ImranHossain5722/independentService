@@ -21,7 +21,7 @@ const [user] = useAuthState(auth)
     return (
         <header>
 
-        <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+        <Navbar fixed="top" collapseOnSelect expand="lg" bg="dark" variant="dark">
           <Container>
           <Navbar.Brand as={Link} to ='/'>
                 <img
