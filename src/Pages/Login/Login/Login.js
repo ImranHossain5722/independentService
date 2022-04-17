@@ -1,17 +1,15 @@
 import React, {useState} from 'react';
 import { Form, Button } from "react-bootstrap";
-import { useSignInWithEmailAndPassword, useSignInWithGoogle } from 'react-firebase-hooks/auth';
+import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import {Link , useNavigate} from 'react-router-dom'
 import auth from '../../../firebase.init';
+import SocialLogin from '../SocialLogin/SocialLogin';
 const Login = () => {
 
 const [userInformation, setUserInformation] = useState({
     email:"",
     password:"",
 });
-
-// sign with google
-const [signInWithGoogle, googleUser, googleLoading, googleError] = useSignInWithGoogle(auth);
 
 // sign with email and password
 const [
@@ -40,6 +38,7 @@ const passwordChangeHandel = event =>{
         event.preventDefault()
         signInWithEmailAndPassword(userInformation.email, userInformation.password) 
         console.log (userInformation.email, userInformation.password) 
+        navigate('/')
   }
 
 const navigate = useNavigate();
@@ -68,8 +67,9 @@ const navigate = useNavigate();
                 <Button variant="primary" type="submit">
                     Login
                 </Button>
-                <p>New to this site? <Link to="/register" className="text-danger text-decoration-none" onClick={navigateRegister}>Register </Link> </p>
-            </Form>        
+            </Form>
+            <p>New to this site? <Link to="/register" className="text-danger text-decoration-none" onClick={navigateRegister}>Register </Link> </p>
+            <SocialLogin></SocialLogin>        
         </div>
     );
 };

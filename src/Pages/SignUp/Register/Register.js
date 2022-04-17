@@ -13,6 +13,7 @@ const Register = () => {
         password:"",
         name:"",
     });
+
     const [
         createUserWithEmailAndPassword,
         user,
@@ -33,11 +34,12 @@ const registerPasswordHandel = event =>{
 setUserInformation({...userInformation, password:event.target.value});
 
 }
+
 // form 
 const formSubmitRegisterHandel = event =>{
     event.preventDefault()
     createUserWithEmailAndPassword(userInformation.email, userInformation.password, userInformation.name) 
-     
+    navigate('/home') 
 }
 
 const navigate = useNavigate();
