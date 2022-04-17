@@ -6,6 +6,7 @@ import auth from '../../../firebase.init';
 import SocialLogin from '../SocialLogin/SocialLogin';
 const Login = () => {
 
+const navigate = useNavigate()    
 const [userInformation, setUserInformation] = useState({
     email:"",
     password:"",
@@ -20,7 +21,7 @@ const [
   ] = useSignInWithEmailAndPassword(auth);
 
 //errors
-const [errors , setErrors]= useState({
+const [errors, setErrors]= useState({
     email:"",
     password:"",
 }) 
@@ -36,12 +37,11 @@ const passwordChangeHandel = event =>{
 // form 
  const formSubmitHandel = event =>{
         event.preventDefault()
-        signInWithEmailAndPassword(userInformation.email, userInformation.password) 
-        console.log (userInformation.email, userInformation.password) 
-        navigate('/')
+        signInWithEmailAndPassword(userInformation.email, userInformation.password)  
+        navigate('/home')
   }
 
-const navigate = useNavigate();
+
 // register
   const navigateRegister = event =>{
     navigate('/register')

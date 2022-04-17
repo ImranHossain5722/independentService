@@ -23,7 +23,7 @@ const [user] = useAuthState(auth)
 
         <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
           <Container>
-          <Navbar.Brand href="#home">
+          <Navbar.Brand as={Link} to ='/'>
                 <img
                   alt=""
                   src={logo}
@@ -41,7 +41,7 @@ const [user] = useAuthState(auth)
               <Nav.Link as={Link} to='about' >About</Nav.Link>
               <Nav.Link as={Link} to='blog' >Blog</Nav.Link>
                   {
-                    user? <button className='btn btn-link text-decoration-none text-white' onClick={logOutHandel}> Sign Out
+                    user ? <button className='btn btn-link text-decoration-none text-white' onClick={logOutHandel}> Sign Out
                      </button  > :
                     <Nav.Link as={Link} to='login'>Login
                     </Nav.Link>}     

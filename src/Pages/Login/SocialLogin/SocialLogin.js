@@ -1,5 +1,5 @@
 import React from 'react';
-import {useSignInWithGithub,  useSignInWithGoogle } from 'react-firebase-hooks/auth';
+import {useSignInWithGithub ,  useSignInWithGoogle } from 'react-firebase-hooks/auth';
 import auth from '../../../firebase.init';
 import google from "../../../Images/social-images/Google-Logo.png";
 import github from "../../../Images/social-images/Github.png";
@@ -10,8 +10,9 @@ const SocialLogin = () => {
 
     // sign with google
 const [signInWithGoogle, googleUser, googleLoading, googleError] = useSignInWithGoogle(auth);
+
 const [signInWithGithub, gitUser, gitLoading, gitError] = useSignInWithGithub(auth);
-const navigate =useNavigate();
+const navigate = useNavigate();
 
     if (googleUser || gitUser){
 
