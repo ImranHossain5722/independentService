@@ -3,6 +3,7 @@ import { Form, Button } from "react-bootstrap";
 import {Link , useNavigate} from 'react-router-dom'
 import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import auth from '../../../firebase.init';
+import SocialLogin from '../../Login/SocialLogin/SocialLogin';
 import './Register.css';
 
 
@@ -76,6 +77,8 @@ navigate('/login')
                 </Button>
                 <p className='pt-2'>Already have an account? <Link to="/login" className="text-danger text-decoration-none" onClick={navigateRegister}>Login</Link> </p>
             </Form>
+
+            <SocialLogin></SocialLogin>
                 </div>        
         </div>
     );
