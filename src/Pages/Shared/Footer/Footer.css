@@ -1,19 +1,33 @@
 .footer-main-div{
-    background-color: black
+    background-color: black;
 }
 .footer-main-div h3 {
     color: #fff;
     font-family:K2D;
     font-weight: 700;
-    font-size: 20px;
+    font-size: 30px;
+    margin-bottom: 15px;
     letter-spacing:2px;    
 
 }
 .footer-main-div p{
     color:#dd4668;
-    font-size:16px;
+    font-size:20px;
+}
+.follow-me img {
+    margin-right: 10px;
 }
 
 .copy-footer{
+    background-color: black;
     
+}
+.copy-footer p{
+    color: #fff;
+    margin:0px ;
+    padding: 50px;
+    font-size: 20px;
+    text-align: center;
+    
+
 }

@@ -21,11 +21,11 @@ const Footer = () => {
             </div>
             <div className="social">
                 <h3>Follow Me </h3>
-                    <div>
-                        <img style={{width:'30px'}} src={facebook} alt="" />
-                        <img style={{width:'50px'}}src={twitter} alt="" />
+                    <div className='follow-me' >
+                        <img  src={facebook} alt="" />
+                        <img src={twitter} alt="" />
     
-                        <img style={{width:'50px'}}src={instagram} alt="" />
+                        <img src={instagram} alt="" />
             
                     </div>
             </div>
@@ -33,7 +33,7 @@ const Footer = () => {
             </div> 
 
             <div className='copy-footer'>
-                <p>&#169; copyright {year}</p>
+                <p> Copy Right &#169; {year}</p>
             </div>
             
         </footer>
