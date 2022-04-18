@@ -2,5 +2,49 @@
 padding-left:0px ;
 padding-right: 0px;   
 margin:px;
-background-color:#1E1F22
+background-color:#1E1F22 ;
+height: 500px;
+position: relative; 
+box-shadow: 0px 0px 9px 1px #744646;
+}
+
+.service-title{
+color: #ffffff;
+margin-left: 15px;
+font-family: k2D;
+font-weight: 600;
+letter-spacing: 2px;
+
+}
+.service-price{
+color:#dd4668;
+font-style: italic;
+margin-left: 15px;
+
+}
+.span-price {
+
+    font-family: k2D;
+    letter-spacing: 1px;
+    color:white
+}
+.description{
+    color: #ffffff;
+    margin:0px 15px 20px;
+    font-family: k2d;
+    letter-spacing: 1px;
+
+}
+
+.button-checkOut{
+position: absolute;
+color: #ffffff;
+font-size: 20px;
+font-weight: 500;
+font-family: k2D;
+bottom:0;
+border: none;
+padding: 10px;
+width: 100%;
+background-color: #f12d5b;
 }

@@ -9,10 +9,11 @@ const {title, price, description, img } = service
             <div className=''>
                 <div className='container-div ' >
                     <img className='img-fluid ' src={img} alt="" />
-                    <h2>{title}</h2>
-                    <h4>{price}</h4>
-                    <p>{description}</p>
-                    <button>Check Out </button>
+                    <h2 className='service-title'>{title}</h2>
+                    <h4 className='service-price'><span className='span-price'> Price :
+                    </span> {price} $ </h4>
+                    <p className='description'>{description}</p>
+                    <button className='button-checkOut'>Check Out </button>
                 </div>
             </div>
         </div>

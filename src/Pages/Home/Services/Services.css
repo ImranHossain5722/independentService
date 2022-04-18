@@ -3,3 +3,19 @@ display: grid;
 grid-template-columns: repeat(3, 1fr);
 gap:30px;
 }
+
+/* make services responsive */
+
+@media only screen and (max-width:576){
+
+    .services-container{
+        grid-template-columns: repeat(3, 1fr);
+      }
+}
+
+@media only screen and (max-width:577)and (max-width:992){
+
+    .services-container{
+        grid-template-columns: repeat(2, 1fr);
+      }
+}
