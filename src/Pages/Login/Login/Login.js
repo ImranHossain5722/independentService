@@ -4,6 +4,8 @@ import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import {Link , useNavigate} from 'react-router-dom'
 import auth from '../../../firebase.init';
 import SocialLogin from '../SocialLogin/SocialLogin';
+import './Login.css'
+
 const Login = () => {
 
 const navigate = useNavigate()    
@@ -48,11 +50,12 @@ const passwordChangeHandel = event =>{
 }
 
     return (
-        <div className='container w-50 mx-auto'>
-            <div className="form-title">
-                <h1>Login Please </h1>
-            </div>
-            <Form onSubmit={formSubmitHandel}>
+        <div className='p-5 mainDivForm' >
+            
+                
+                <div className="w-50 mx-auto form-body">
+                <h1 className="form-title" >Login</h1>
+                <Form onSubmit={formSubmitHandel}>
                 <Form.Group className="mb-3" controlId="formBasicEmail">
                     <Form.Control type="email" placeholder="Enter email" required onChange={emailChangeHandel} />
                 </Form.Group>
@@ -60,16 +63,15 @@ const passwordChangeHandel = event =>{
                 <Form.Group className="mb-3" controlId="formBasicPassword">
                     <Form.Control type="password" placeholder="Password" required onChange={passwordChangeHandel} />
                 </Form.Group>
-
-                <Form.Group className="mb-3" controlId="formBasicCheckbox">
-                    <Form.Check type="checkbox" label="Check me out" />
-                </Form.Group>
                 <Button variant="primary" type="submit">
                     Login
                 </Button>
             </Form>
-            <p>New to this site? <Link to="/register" className="text-danger text-decoration-none" onClick={navigateRegister}>Register </Link> </p>
-            <SocialLogin></SocialLogin>        
+            <p className="pt-2">New to this site? <Link to="/register" className="text-danger text-decoration-none" onClick={navigateRegister}>Register </Link> </p>
+            <SocialLogin></SocialLogin>
+            </div>
+            
+                    
         </div>
     );
 };

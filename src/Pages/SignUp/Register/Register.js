@@ -3,6 +3,7 @@ import { Form, Button } from "react-bootstrap";
 import {Link , useNavigate} from 'react-router-dom'
 import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import auth from '../../../firebase.init';
+import './Register.css';
 
 
 const Register = () => {
@@ -49,11 +50,13 @@ navigate('/login')
 }
 
     return (
-        <div className='container w-50 mx-auto'>
+        <div className='mainDivForm'>
             <div className="form-title">
-                <h1> Register </h1>
+                
             </div>
-            <Form onSubmit={formSubmitRegisterHandel}>
+                <div className='w-50 mx-auto form-body'>
+                <h1 className="form-title" > Register </h1>
+                <Form onSubmit={formSubmitRegisterHandel}>
                 <Form.Group className="mb-3" controlId="formBasicEmail">
                     <Form.Control type="text" placeholder="Enter your name" required onChange={RegisterNameHandel} />
                 </Form.Group>
@@ -71,8 +74,9 @@ navigate('/login')
                 <Button variant="primary" type="submit">
                     Register
                 </Button>
-                <p>Already have an account? <Link to="/login" className="text-danger text-decoration-none" onClick={navigateRegister}>Login</Link> </p>
-            </Form>        
+                <p className='pt-2'>Already have an account? <Link to="/login" className="text-danger text-decoration-none" onClick={navigateRegister}>Login</Link> </p>
+            </Form>
+                </div>        
         </div>
     );
 };

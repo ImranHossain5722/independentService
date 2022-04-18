@@ -10,7 +10,7 @@ const Footer = () => {
     const year = today.getFullYear()
     return (
         <footer className='footer'>
-            <div className='footer-main-div d-flex justify-content-around'>
+            <div className='footer-main-div p-5 d-flex justify-content-around'>
             <div className="mobile">
                 <h3>Phone Number </h3>
                 <p>01688615859</p>
