@@ -15,7 +15,7 @@ const Services = () => {
     },[])
     return (
         <div className='services-main-div'>
-            <h1 className='text-center p-5' >My Services</h1>
+            <h1 className=' my-service-title text-center p-5' >My Services</h1>
         
                  <div className='container  services-container'>
                  {

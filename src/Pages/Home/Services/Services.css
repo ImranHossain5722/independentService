@@ -1,3 +1,18 @@
+.services-main-div{
+    background-color: rgb(16, 19, 22);
+    height: 750px;
+}
+.my-service-title{
+    color: rgba(255,255,255,0);
+    text-shadow: 0px 0px 25px rgb(0 0 0 / 40%);
+    -webkit-text-stroke: 0.12px #fff;
+    font-family:K2D;
+    font-weight: 700;
+    font-size: 50px;
+    letter-spacing:2px;
+
+}
+
 .services-container{
 display: grid;
 grid-template-columns: repeat(3, 1fr);

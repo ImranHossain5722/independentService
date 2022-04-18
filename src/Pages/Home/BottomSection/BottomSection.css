@@ -1,0 +1,21 @@
+.bottomSection-main-div {
+    height: 850px;
+    width: 100%;
+    background-image: url(https://res.cloudinary.com/dk0lorahh/image/upload/v1650259999/Footer-BG_j3o4fn.jpg);
+    background-position:center center ;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.bottom-div h2{
+font-size: 85px;
+color: #fff;
+letter-spacing: 03px;
+font-weight: 700;
+}
+
+.ofSpan{
+    color: #515151;
+
+}
